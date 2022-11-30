@@ -49,10 +49,10 @@ Function CreateAzureVMFromPackerTemplate {
 
     $vmSize = "Standard_DS2_v2"
     $guid = [System.GUID]::NewGuid().ToString().ToUpper()
-    $vnetName = $env:UserName + "vnet-" + $guid
-    $subnetName = $env:UserName + "subnet-" + $guid
-    $nicName = $env:UserName + "nic-" + $guid
-    $publicIpName = $env:UserName + "pip-" +  $guid
+    $vnetName = "vnet-" + $guid
+    $subnetName = "subnet-" + $guid
+    $nicName = "nic-" + $guid
+    $publicIpName = "pip-" +  $guid
 
     Write-Host "Creating a virtual network and subnet"
     ($vnet = az network vnet create -g $ResourceGroupName -l $AzureLocation -n $vnetName --address-prefixes 10.0.0.0/16 --subnet-name $subnetName --subnet-prefixes 10.0.1.0/24 --subscription $subscriptionId -o json)
