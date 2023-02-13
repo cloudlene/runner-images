@@ -278,7 +278,6 @@
     "dotnet": {
         "versions": [
             "3.1",
-            "5.0",
             "6.0",
             "7.0"
         ]
@@ -298,7 +297,7 @@
         "default": "1.17"
     },
     "node": {
-        "default": "16",
+        "default": "18",
         "nvm_versions": [
             "14",
             "16",
