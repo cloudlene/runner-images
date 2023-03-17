@@ -1,6 +1,6 @@
 # Windows Server 2019
 - OS Version: 10.0.17763 Build 4010
-- Image Version: 20230219.1
+- Image Version: 20230307.2
 
 ## Windows features
 - Windows Subsystem for Linux (WSLv1): Enabled
@@ -13,7 +13,7 @@
 - Julia 1.8.5
 - Kotlin 1.8.10
 - LLVM 15.0.7
-- Node 18.14.1
+- Node 18.14.2
 - Perl 5.32.1
 - PHP 8.2.3
 - Python 3.7.9
@@ -24,12 +24,12 @@
 - Composer 2.5.4
 - Helm 3.11.1
 - Miniconda 23.1.0 (pre-installed on the image but not added to PATH)
-- NPM 9.3.1
-- NuGet 6.4.0.123
+- NPM 9.5.0
+- NuGet 6.5.0.154
 - pip 23.0.1 (python 3.7)
 - Pipx 1.1.0
 - RubyGems 2.7.6.3
-- Vcpkg (build from commit a32522820)
+- Vcpkg (build from commit e69c9817d)
 - Yarn 1.22.19
 
 #### Environment variables
@@ -41,19 +41,19 @@
 ### Project Management
 - Ant 1.10.13
 - Gradle 7.6
-- Maven 3.9.0
+- Maven 3.8.7
 - sbt 1.8.2
 
 ### Tools
 - 7zip 22.01
 - aria2 1.36.0
 - azcopy 10.17.0
-- Bazel 6.0.0
+- Bazel 6.1.0
 - Bazelisk 1.13.2
-- Bicep 0.14.46
+- Bicep 0.14.85
 - Cabal 3.8.1.0
 - CMake 3.25.2
-- CodeQL Action Bundles 2.12.1 2.12.2
+- CodeQL Action Bundles 2.12.2 2.12.3
 - Docker 23.0.1
 - Docker Compose v1 1.29.2
 - Docker Compose v2 2.16.0
@@ -61,12 +61,12 @@
 - ghc 9.4.4
 - Git 2.39.2.windows.1
 - Git LFS 3.3.0
-- Google Cloud SDK 418.0.0
+- Google Cloud SDK 421.0.0
 - ImageMagick 7.1.0-61
 - InnoSetup 6.2.2
 - jq 1.6
 - Kind 0.17.0
-- Kubectl 1.26.1
+- Kubectl 1.26.2
 - Mercurial 5.0
 - Mingw-w64 8.1.0
 - Newman 5.3.2
@@ -74,7 +74,7 @@
 - OpenSSL 1.1.1
 - Packer 1.8.5
 - Parcel 2.8.3
-- Pulumi 3.55.0
+- Pulumi 3.56.0
 - R 4.2.2
 - Service Fabric SDK 9.1.1436.9590
 - Stack 2.9.3
@@ -87,11 +87,11 @@
 - zstd 1.5.4
 
 ### CLI Tools
-- Alibaba Cloud CLI 3.0.149
-- AWS CLI 2.10.1
-- AWS SAM CLI 1.73.0
+- Alibaba Cloud CLI 3.0.152
+- AWS CLI 2.11.0
+- AWS SAM CLI 1.76.0
 - AWS Session Manager CLI 1.2.398.0
-- Azure CLI 2.45.0
+- Azure CLI 2.46.0
 - Azure DevOps CLI extension 0.26.0
 - Cloud Foundry CLI 6.53.0
 - GitHub CLI 2.23.0
@@ -112,11 +112,11 @@
 - Rustfmt 1.5.1
 
 ### Browsers and Drivers
-- Google Chrome 110.0.5481.104
+- Google Chrome 110.0.5481.178
 - Chrome Driver 110.0.5481.77
-- Microsoft Edge 110.0.1587.50
-- Microsoft Edge Driver 110.0.1587.50
-- Mozilla Firefox 110.0
+- Microsoft Edge 110.0.1587.63
+- Microsoft Edge Driver 110.0.1587.63
+- Mozilla Firefox 110.0.1
 - Gecko Driver 0.32.2
 - IE Driver 4.8.0.0
 - Selenium server 4.8.0
@@ -145,7 +145,7 @@
 | wslbash.exe   | C:\Windows\System32\bash.exe      |
 
 ### MSYS2
-- Pacman 6.0.1
+- Pacman 6.0.2
 
 #### Notes
 ```
@@ -163,11 +163,12 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 - 1.17.13
 - 1.18.10
 - 1.19.6
+- 1.20.1
 
 #### Node.js
 - 14.21.3
 - 16.19.1
-- 18.14.1
+- 18.14.2
 
 #### Python
 - 2.7.18
@@ -210,7 +211,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 #### MongoDB
 | Version  | ServiceName | ServiceStatus | ServiceStartType |
 | -------- | ----------- | ------------- | ---------------- |
-| 5.0.14.0 | MongoDB     | Stopped       | Disabled         |
+| 5.0.15.0 | MongoDB     | Stopped       | Disabled         |
 
 ### Database tools
 - Azure CosmosDb Emulator 2.14.11.0
@@ -222,7 +223,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 ### Web Servers
 | Name   | Version | ConfigFile                            | ServiceName | ServiceStatus | ListenPort |
 | ------ | ------- | ------------------------------------- | ----------- | ------------- | ---------- |
-| Apache | 2.4.54  | C:\tools\Apache24\conf\httpd.conf     | Apache      | Stopped       | 80         |
+| Apache | 2.4.55  | C:\tools\Apache24\conf\httpd.conf     | Apache      | Stopped       | 80         |
 | Nginx  | 1.23.3  | C:\tools\nginx-1.23.3\conf\nginx.conf | nginx       | Stopped       | 80         |
 
 ### Visual Studio Enterprise 2019
@@ -499,7 +500,7 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 - nbgv 3.5.119+5d25f54fec
 
 ### PowerShell Tools
-- PowerShell 7.2.9
+- PowerShell 7.2.10
 
 #### Powershell Modules
 - Az: 9.3.0
@@ -508,10 +509,10 @@ Note: MSYS2 is pre-installed on image but not added to PATH.
 - Az (Cached): 1.0.0.zip, 1.6.0.zip, 2.3.2.zip, 2.6.0.zip, 3.1.0.zip, 3.5.0.zip, 3.8.0.zip, 4.3.0.zip, 4.4.0.zip, 4.7.0.zip, 5.5.0.zip, 5.9.0.zip, 6.6.0.zip, 7.5.0.zip
 - Azure (Cached): 3.8.0.zip, 4.2.1.zip, 5.1.1.zip
 - AzureRM (Cached): 3.8.0.zip, 4.2.1.zip, 5.1.1.zip, 6.7.0.zip
-- AWSPowershell: 4.1.274
+- AWSPowershell: 4.1.285
 - DockerMsftProvider: 1.0.0.8
 - MarkdownPS: 1.9
-- Microsoft.Graph: 1.22.0
+- Microsoft.Graph: 1.23.0
 - Pester: 3.4.0, 5.4.0
 - PowerShellGet: 1.0.0.1, 2.2.5
 - PSScriptAnalyzer: 1.21.0
@@ -555,6 +556,6 @@ All other versions are saved but not installed.
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------ | ---------- |
 | mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019  | sha256:c3ffbe8f1ac99a6e8bd51e0259c0e33b3203098209ed56f71ef038e7781b4fd2  | 2023-02-14 |
 | mcr.microsoft.com/dotnet/framework/runtime:4.8-windowsservercore-ltsc2019 | sha256:7d8886649cc239ad1daf134dd8a566dd1b680291eb7f89ffe4ba2968c7f0007e  | 2023-02-14 |
-| mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019     | sha256:1c93b0efbaf3d4b2b23ffb8d772aa8586322af7449273f12c47c0931c79325ce  | 2023-02-14 |
+| mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019     | sha256:eae7efdcfce460bec521b0719973ce77836793e4a954d4ee97756c468299671f  | 2023-02-21 |
 | mcr.microsoft.com/windows/nanoserver:1809                                 | sha256:fc2d54de31f170c0bef160137b4dc0a80c2105a218b248dc71c754e1fcabd14f  | 2023-02-07 |
 | mcr.microsoft.com/windows/servercore:ltsc2019                             | sha256:46b40e526196d42b78d6bc777529203fd51467b095ddcb7acc87fc475c3c5e55  | 2023-02-07 |

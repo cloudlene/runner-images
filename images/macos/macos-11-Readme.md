@@ -1,17 +1,16 @@
 | Announcements |
 |-|
-| [GCC-9 will be removed from macOS 11 on March, 6](https://github.com/actions/runner-images/issues/7136) |
-| [Xcode 13.4 will be pointing to 13.4.1 on February, 28](https://github.com/actions/runner-images/issues/7127) |
+| [GCC-9 will be removed from macOS 11 on March, 13](https://github.com/actions/runner-images/issues/7136) |
 ***
 # macOS 11
 - OS Version: macOS 11.7.4 (20G1120)
 - Kernel Version: Darwin 20.6.0
-- Image Version: 20230219.1
+- Image Version: 20230303.1
 
 ## Installed Software
 
 ### Language and Runtime
-- .NET Core SDK: 3.1.101, 3.1.201, 3.1.302, 3.1.426, 6.0.406, 7.0.102, 7.0.200
+- .NET Core SDK: 3.1.101, 3.1.201, 3.1.302, 3.1.426, 6.0.406, 7.0.102, 7.0.201
 - Bash 3.2.57(1)-release
 - Clang/LLVM 13.0.0
 - Clang/LLVM (Homebrew) 15.0.7 - available on `$(brew --prefix llvm@15)/bin/clang`
@@ -28,9 +27,9 @@
 - Kotlin 1.8.10-release-430
 - Mono 6.12.0.188
 - MSBuild 16.10.1.51301 (Mono 6.12.0.188)
-- Node.js 18.14.1
+- Node.js 18.14.2
 - NVM 0.39.3
-- NVM - Cached node versions: 14.21.3, 16.19.1, 18.14.1
+- NVM - Cached node versions: 14.21.3, 16.19.1, 18.14.2
 - Perl 5.36.0
 - PHP 8.2.3
 - Python 2.7.18
@@ -41,17 +40,17 @@
 ### Package Management
 - Bundler 2.4.7
 - Carthage 0.39.0
-- CocoaPods 1.11.3
+- CocoaPods 1.12.0
 - Composer 2.5.4
-- Homebrew 4.0.1
+- Homebrew 4.0.4
 - Miniconda 23.1.0
-- NPM 9.3.1
+- NPM 9.5.0
 - NuGet 6.3.1.1
 - Pip 20.3.4 (python 2.7)
 - Pip3 23.0.1 (python 3.11)
 - Pipx 1.1.0
 - RubyGems 3.4.7
-- Vcpkg 2023 (build from commit a32522820)
+- Vcpkg 2023 (build from commit 8daf70c56)
 - Yarn 1.22.19
 
 #### Environment variables
@@ -63,7 +62,7 @@
 ### Project Management
 - Apache Ant 1.10.13
 - Apache Maven 3.9.0
-- Gradle 8.0
+- Gradle 8.0.2
 - Sbt 1.8.2
 
 ### Utilities
@@ -73,7 +72,7 @@
 - bazel 6.0.0
 - bazelisk 1.16.0
 - bsdtar 3.3.2 - available by 'tar' alias
-- Curl 7.88.0
+- Curl 7.88.1
 - Git 2.39.2
 - Git LFS 3.3.0
 - GitHub CLI 2.23.0
@@ -94,28 +93,27 @@
 - Sox 14.4.2
 - Subversion (SVN) 1.14.2
 - Switchaudio-osx 1.1.0
-- yq 4.30.8
+- yq 4.31.2
 - zstd 1.5.4
 
 ### Tools
-- Aliyun CLI 3.0.149
+- Aliyun CLI 3.0.152
 - App Center CLI 2.13.2
-- AWS CLI 2.10.1
-- AWS SAM CLI 1.73.0
+- AWS CLI 2.11.0
+- AWS SAM CLI 1.75.0
 - AWS Session Manager CLI 1.2.398.0
 - Azure CLI 2.45.0
 - Azure CLI (azure-devops) 0.26.0
-- Bicep CLI 0.14.46
+- Bicep CLI 0.14.85
 - Cabal 3.6.2.0
 - Cmake 3.25.2
-- CodeQL Action Bundles 2.12.1 2.12.2
-- Colima 0.5.2
-- Fastlane 2.211.0
+- CodeQL Action Bundles 2.12.2 2.12.3
+- Fastlane 2.212.1
 - GHC 9.4.4
-- GHCup 0.1.19.1
+- GHCup 0.1.19.2
 - Jazzy 0.14.3
-- Stack 2.9.1
-- SwiftFormat 0.50.9
+- Stack 2.9.3
+- SwiftFormat 0.51.1
 - Swig 4.1.1
 - Xcode Command Line Tools 13.2.0.0.1.1638488800
 
@@ -126,11 +124,11 @@
 ### Browsers
 - Safari 16.3.1 (16614.4.6.11.7)
 - SafariDriver 16.3.1 (16614.4.6.11.7)
-- Google Chrome 110.0.5481.100
+- Google Chrome 110.0.5481.177
 - ChromeDriver 110.0.5481.77
-- Microsoft Edge 110.0.1587.50
-- Microsoft Edge WebDriver 110.0.1587.50
-- Mozilla Firefox 110.0
+- Microsoft Edge 110.0.1587.63
+- Microsoft Edge WebDriver 110.0.1587.63
+- Mozilla Firefox 110.0.1
 - geckodriver 0.32.2
 - Selenium server 4.8.0
 
@@ -179,12 +177,13 @@
 #### Node.js
 - 14.21.3
 - 16.19.1
-- 18.14.1
+- 18.14.2
 
 #### Go
 - 1.17.13
 - 1.18.10
 - 1.19.6
+- 1.20.1
 
 ### Rust Tools
 - Cargo 1.67.1
@@ -201,7 +200,7 @@
 - Rustfmt 1.5.1-stable
 
 ### PowerShell Tools
-- PowerShell 7.2.9
+- PowerShell 7.2.10
 
 #### PowerShell Modules
 - Az: 9.4.0
@@ -218,10 +217,10 @@
 ### Xamarin
 
 #### Visual Studio for Mac
-| Version        | Build     | Path                                 |
-| -------------- | --------- | ------------------------------------ |
-| 2019           | 8.10.25.2 | /Applications/Visual Studio 2019.app |
-| 2022 (default) | 17.4.5.8  | /Applications/Visual Studio.app      |
+| Version        | Build       | Path                                 |
+| -------------- | ----------- | ------------------------------------ |
+| 2019           | 8.10.25.2   | /Applications/Visual Studio 2019.app |
+| 2022 (default) | 17.5.0.1802 | /Applications/Visual Studio.app      |
 
 ##### Notes
 ```
@@ -361,6 +360,6 @@ mv "/Applications/Visual Studio 2019.app" "/Applications/Visual Studio.app"
 ### Miscellaneous
 - libXext 1.3.5
 - libXft 2.3.7
-- Tcl/Tk 8.6.13
+- Tcl/Tk 8.6.13_1
 - Zlib 1.2.13
 
