@@ -67,7 +67,7 @@ In any case you will need these software installed:
 ## Automated image generation
 
 This repo bundles script that automates image generation process.
-You only need a build agent configured as described above and active Azure subsctiption.
+You only need a build agent configured as described above and active Azure subscription.
 We suggest to start with UbuntuMinimal image because it includes only a minimal set of required software and builds in less then half an hour.
 
 All steps here are supposed to run in Powershell.
@@ -275,3 +275,4 @@ The scripts are copied to the VHD during the image generation process to the fol
 - **InternetExplorerConfiguration** - turns off the Internet Explorer Enhanced Security feature
 - **Msys2FirstLaunch.ps1** - initializes bash user profile in MSYS2
 - **VSConfiguration.ps1** - performs initial Visual Studio configuration
+

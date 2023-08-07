@@ -128,17 +128,7 @@
     ],
     "java": {
         "default": "8",
-        "default_vendor": "Temurin-Hotspot",
-        "vendors": [
-            {
-                "name": "Temurin-Hotspot",
-                "versions": [ "8", "11", "17" ]
-            },
-            {
-                "name": "Adopt",
-                "versions": [ "8", "11"]
-            }
-        ]
+        "versions": [ "8", "11", "17" ]
     },
     "android": {
         "platform_min_version": "27",
@@ -322,6 +312,7 @@
             "wasm.tools"
         ],
         "vsix": [
+            "SSIS.MicrosoftDataToolsIntegrationServices",
             "VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects",
             "WixToolset.WixToolsetVisualStudio2022Extension",
             "ProBITools.MicrosoftReportProjectsforVisualStudio2022",
@@ -366,7 +357,6 @@
     },
     "dotnet": {
         "versions": [
-            "3.1",
             "6.0"
         ],
         "tools": [
