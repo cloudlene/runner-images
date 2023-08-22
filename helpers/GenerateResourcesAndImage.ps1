@@ -119,8 +119,6 @@ Function GenerateResourcesAndImage {
         [Parameter(Mandatory = $True)]
         [string] $ResourceGroupName,
         [Parameter(Mandatory = $True)]
-        [string] $StorageAccountName,
-        [Parameter(Mandatory = $True)]
         [ImageType] $ImageType,
         [Parameter(Mandatory = $True)]
         [string] $AzureLocation,
@@ -185,24 +183,6 @@ Function GenerateResourcesAndImage {
         } else {
             $AllowedInboundIpAddresses = $AgentIp
         }
-
-        # # This script should follow the recommended naming conventions for azure resources
-        # $StorageAccountName = if($ResourceGroupName.EndsWith("-rg")) {
-        #     $ResourceGroupName.Substring(0, $ResourceGroupName.Length -3)
-        # } else { $ResourceGroupName }
-
-        # # Resource group names may contain special characters, that are not allowed in the storage account name
-        # $StorageAccountName = $StorageAccountName.Replace("-", "").Replace("_", "").Replace("(", "").Replace(")", "").ToLower()
-        # $StorageAccountName += "001"
-        
-        
-        # # Storage Account Name can only be 24 characters long
-        # if ($StorageAccountName.Length -gt 24){
-        #     $StorageAccountName = $StorageAccountName.Substring(0, 24)
-        # }
-
-        if ($tags) {
-            New-AzStorageAccount -ResourceGroupName $ResourceGroupName -AccountName $storageAccountName -Location $AzureLocation -SkuName "Standard_LRS" -AllowBlobPublicAccess $AllowBlobPublicAccess -EnableHttpsTrafficOnly $EnableHttpsTrafficOnly -MinimumTlsVersion "TLS1_2" -Tag $tags
     } else {
         if ($TemplatePath.Contains("pkr.hcl")) {
             $AllowedInboundIpAddresses = "[]"
